@@ -1,0 +1,29 @@
+.headingDiv{
+    width: 666px;
+    height: 72px;
+    margin-top: 72px;
+    margin-left: 388px;
+}
+
+.heading{
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    line-height: 72px;
+    letter-spacing: 1px;
+}
+
+.descDiv{
+    width: 721px;
+    height: 80px;
+    margin-top: 16px;
+    margin-left: 360px;
+}
+
+.desc{
+font-size: 22px;
+font-weight: 400;
+line-height: 40px;
+text-align: center;
+
+}
