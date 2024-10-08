@@ -1,5 +1,6 @@
 import { useState } from "react";
 import classes from "./Products.module.css";
+import Filter from "../Filter/Filter";
 
 const Products = () => {
   const [showFilter, setShowFilter] = useState(false);
@@ -32,12 +33,7 @@ const Products = () => {
           <option value={"highToLow"}>PRICE: HIGH TO LOW</option>
         </select>
       </div>
-      <div className={classes.totalDiv}>
-        <div
-          className={showFilter ? classes.filters : classes.filterHide}
-        ></div>
-        <div className={showFilter ? classes.productsDiv : classes.productsDivFull}></div>
-      </div>
+      <Filter showFilter={showFilter}/>
     </>
   );
 };
