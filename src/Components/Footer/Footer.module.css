@@ -1,0 +1,59 @@
+.footer{
+    width: 100%;
+    height: 750px;
+    background-color: rgba(0, 0, 0, 1);
+
+}
+
+.contactDiv{
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0;
+    border-bottom: 1px solid white;
+}
+
+.contact1, .contact2{
+    width: 48%;
+}
+
+.text1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.text2{
+    margin-top: 24px;
+}
+
+.input{
+    width: 60%;
+    height: 40px;
+}
+.btn{
+    width: 20%;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.quickLinksDiv{
+    color: white;
+    width: 80%;
+    padding: 56px 0;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerList{
+    list-style-type: none;
+}
+
+.footerList li{
+    padding-bottom:10px ;
+}
