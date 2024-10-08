@@ -22,6 +22,10 @@
     padding: 0 96px;
 }
 
+.hamburger{
+    display: none;
+}
+
 .logo{
     width: 36px;
     height: 36px;

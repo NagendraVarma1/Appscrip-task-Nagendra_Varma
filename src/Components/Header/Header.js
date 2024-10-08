@@ -5,6 +5,7 @@ import heart from "../../Assests/heart.jpg";
 import bag from "../../Assests/shopping-bag.jpg";
 import profile from "../../Assests/profile.jpg";
 import language from "../../Assests/Language.jpg";
+import hamburger from '../../Assests/solar_hamburger-menu-linear.jpg'
 
 const Header = () => {
   return (
@@ -12,6 +13,7 @@ const Header = () => {
       <div className={classes.headerStrip}></div>
       <div className={classes.head}>
         <div className={classes.header}>
+        <img className={classes.hamburger} src={hamburger} alt="hamburger" />
           <img className={classes.logo} src={logo} alt="logo" />
           <p className={classes.brand}>LOGO</p>
           <div className={classes.icons}>

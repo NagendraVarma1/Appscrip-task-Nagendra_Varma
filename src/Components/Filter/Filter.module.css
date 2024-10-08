@@ -7,7 +7,7 @@
 
 
 .filters{
-    width: 25%;
+    width: 20%;
     height: 846px;
     margin-right: 10px;
 }
@@ -19,20 +19,17 @@
 
 
 .productsDiv{
-    width: 70%;
+    width: 73%;
     height: max-content;
-    background-color: black;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .productsDivFull{
-    width: 95%;
+    width: 97%;
     height: max-content;
-    background-color: black;
-    display: grid;
-    grid-template-columns: auto auto auto auto; 
-    /* here auto means number of columns */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .selectDiv{
@@ -51,4 +48,29 @@ text-align: left;
 .select{
     width: 100%;
     height: 52px;
+}
+
+.product{
+    width: 300px;
+    height: 462px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.productImg{
+    width: 300px;
+    height: 350px;
+}
+
+.title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.price{
+    text-align: center;
 }
