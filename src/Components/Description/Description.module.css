@@ -2,7 +2,7 @@
     width: 666px;
     height: 72px;
     margin-top: 72px;
-    margin-left: 388px;
+    margin: auto
 }
 
 .heading{
@@ -17,7 +17,7 @@
     width: 721px;
     height: 80px;
     margin-top: 16px;
-    margin-left: 360px;
+    margin: auto;
 }
 
 .desc{

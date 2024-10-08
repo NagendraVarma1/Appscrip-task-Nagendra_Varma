@@ -15,10 +15,10 @@ const Header = () => {
           <img className={classes.logo} src={logo} alt="logo" />
           <p className={classes.brand}>LOGO</p>
           <div className={classes.icons}>
-            <img className={classes.icon} src={search} alt="icon" />
-            <img className={classes.icon} src={heart} alt="icon" />
-            <img className={classes.icon} src={bag} alt="icon" />
-            <img className={classes.icon} src={profile} alt="icon" />
+            <img className={classes.icon1} src={search} alt="icon" />
+            <img className={classes.icon2} src={heart} alt="icon" />
+            <img className={classes.icon3} src={bag} alt="icon" />
+            <img className={classes.icon4} src={profile} alt="icon" />
             <img className={classes.lang} src={language} alt="icon" />
           </div>
         </div>
