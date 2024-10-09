@@ -30,10 +30,16 @@ const Header = () => {
       </div>
       <div className={classes.head}>
         <div className={classes.header}>
-          <img className={classes.hamburger} src={hamburger} alt="hamburger" />
-          <img className={classes.logo} src={logo} alt="logo" />
-          <p className={classes.brand}>LOGO</p>
-          <div className={classes.icons}> 
+          <div className={classes.logos}>
+            <img
+              className={classes.hamburger}
+              src={hamburger}
+              alt="hamburger"
+            />
+            <img className={classes.logo} src={logo} alt="logo" />
+          </div>
+          <div className={classes.brand}>LOGO</div>
+          <div className={classes.icons}>
             <img className={classes.icon1} src={search} alt="icon" />
             <img className={classes.icon2} src={heart} alt="icon" />
             <img className={classes.icon3} src={bag} alt="icon" />

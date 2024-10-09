@@ -1,14 +1,14 @@
 
 .totalDiv{
     width: 90%;
-    margin: 32px 96px 48px 96px;
+    margin: 32px 5% 48px 5%;
     display: flex;
 }
 
 
 .filters{
     width: 20%;
-    height: 846px;
+    height: 1018px;
     margin-right: 10px;
 }
 
@@ -21,15 +21,21 @@
 .productsDiv{
     width: 73%;
     height: max-content;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 30px;
+    align-items: center;
+    padding-left: 30px;
 }
 
 .productsDivFull{
-    width: 97%;
+    width: 100%;
     height: max-content;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 30px;
+    align-items: center;
+    padding-left: 30px;
 }
 
 .selectDiv{
@@ -49,6 +55,7 @@ text-align: left;
 .select{
     width: 100%;
     height: 52px;
+    border-style: none;
 }
 
 .product{
@@ -56,27 +63,29 @@ text-align: left;
     height: 462px;
     margin: 10px;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px black;
 }
 
 .productImg{
     width: 300px;
-    height: 350px;
+    height: 399px;
 }
 
 .title{
+    width: 269px;
+    height: 22px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow:ellipsis; 
     font-size: 18px;
     font-weight: 700;
+    line-height: 21.8px;
 }
 
 .price{
-    text-align: center;
+    text-align: left;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .totalDiv{
         width: 90%;
         margin: 32px 5% 48px 8%;
@@ -105,9 +114,7 @@ text-align: left;
         width: 150px;
         height: 277px;
         margin: 2px;
-        padding: 5px;
         border-radius: 5px;
-        box-shadow: 1px 1px 5px black;
     }
 
     .productImg{
@@ -116,8 +123,14 @@ text-align: left;
     }
 
     .title{
-        font-size: 12px;
-        font-weight: 600;
+        width: 168px;
+        height: 17px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis; 
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.8px;
     }
 
     .price{
@@ -125,12 +138,15 @@ text-align: left;
         font-size: 12px;
         font-weight: 600;
         padding-bottom: 5px;
+        text-align: left;
     }
 
     .productsDiv, .productsDivFull{
         width: 97%;
         height: max-content;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 180px);
+        grid-gap: 10px;
+        align-items: center;
     }
 }

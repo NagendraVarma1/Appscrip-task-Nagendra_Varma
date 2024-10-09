@@ -1,36 +1,39 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import classes from "./Filter.module.css";
+import data_products from "../../Assests/data";
 
 const Filter = (props) => {
-  const [allProducts, setAllProducts] = useState([]);
 
-  const fetchHandler = () => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        } else {
-          return res.json().then((data) => {
-            throw new Error("Fetching Failed");
-          });
-        }
-      })
-      .then((data) => {
-        const fetchedData = Object.keys(data).map((key) => ({
-          id: data[key].id,
-          title: data[key].title,
-          description: data[key].description,
-          price: data[key].price,
-          image: data[key].image,
-          category: data[key].category,
-        }));
-        setAllProducts(fetchedData);
-      });
-  };
+  //HERE WE FETCH DATA FROM THE FAKE API AND IT ALSO WORKS FINE
+  // const [allProducts, setAllProducts] = useState([]);
+  // const fetchHandler = () => {
+  //   fetch("https://fakestoreapi.com/products")
+  //     .then((res) => {
+  //       if (res.ok) {
+  //         return res.json();
+  //       } else {
+  //         return res.json().then((data) => {
+  //           throw new Error("Fetching Failed");
+  //         });
+  //       }
+  //     })
+  //     .then((data) => {
+  //       const fetchedData = Object.keys(data).map((key) => ({
+  //         id: data[key].id,
+  //         title: data[key].title,
+  //         description: data[key].description,
+  //         price: data[key].price,
+  //         image: data[key].image,
+  //         category: data[key].category,
+  //       }));
+  //       setAllProducts(fetchedData);
+  //     });
+  // };
 
-  useEffect(() => {
-    fetchHandler();
-  }, []);
+  // useEffect(() => {
+  //   fetchHandler();
+  // }, []);
+  console.log(data_products)
   return (
     <div className={classes.totalDiv}>
       <div className={props.showFilter ? classes.filters : classes.filterHide}>
@@ -128,12 +131,12 @@ const Filter = (props) => {
           props.showFilter ? classes.productsDiv : classes.productsDivFull
         }
       >
-        {allProducts.map((product) => (
+        {data_products.map((product) => (
           <div key={product.id} className={classes.product}>
             <img className={classes.productImg} src={product.image} alt="product"/>  
             <div>
-              <p className={classes.title}>{product.title}</p>
-              <p className={classes.price}>${product.price}/-</p>
+              <div className={classes.title}>{product.title}</div>
+              <div className={classes.price}>Price: {product.price}/-</div>
             </div>
           </div>
         ))}

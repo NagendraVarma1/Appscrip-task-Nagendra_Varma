@@ -59,7 +59,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .contactDiv{
         width: 90%;
         margin-left: 5%;

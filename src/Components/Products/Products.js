@@ -12,19 +12,19 @@ const Products = () => {
   return (
     <>
       <div className={classes.filterDiv}>
-        <p className={classes.items}>3245 Items</p>
-        <p
+        <div className={classes.items}>3245 Items</div>
+        <div
           onClick={filterHandler}
           className={showFilter ? classes.showFilterDiv : classes.hideFilterDiv}
         >
           SHOW FILTER
-        </p>
-        <p
+        </div>
+        <div
           onClick={filterHandler}
           className={showFilter ? classes.hideFilterDiv : classes.showFilterDiv}
         >
           HIDE FILTER
-        </p>
+        </div>
         <select className={classes.recommended}>
           <option value={"recommended"}>RECOMMENDED</option>
           <option value={"newest"}>NEWEST FIRST</option>
