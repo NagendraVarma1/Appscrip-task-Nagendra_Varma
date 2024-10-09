@@ -69,11 +69,19 @@
         border-bottom: 1px solid white;
     }
 
-    .contact1, .text2{
+    .contact1, .contactText2{
         width: 100%;
         border-bottom: 1px solid white;
     }
 
+    .contact1, .contactText2, .text3{
+        padding-bottom: 24px;
+    }
+
+    .contactText1{
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
     
 
     .btn{
