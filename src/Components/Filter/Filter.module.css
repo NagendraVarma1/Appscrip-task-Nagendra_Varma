@@ -145,8 +145,9 @@ text-align: left;
         width: 97%;
         height: max-content;
         display: grid;
-        grid-template-columns: repeat(auto-fit, 180px);
+        grid-template-columns: repeat(auto-fit, 160px);
         grid-gap: 10px;
         align-items: center;
+        padding-left: 10px;
     }
 }
