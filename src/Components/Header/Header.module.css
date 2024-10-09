@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .mainHeader{
     width: 100%;
     height: 220px;
@@ -42,10 +44,12 @@
 
 .brand{
     width: 107px;
+    font-family: inter;
     font-weight: 800;
     font-size: 36px;
     height: 44px;
     margin-top: 36px;
+    margin-left: 12%;
 }
 
 .icons{
@@ -66,7 +70,7 @@
 }
 
 .mainTab{
-    width: 80%;
+    width: 636px;
     height: 24px;
     display: flex;
     justify-content: space-between;

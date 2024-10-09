@@ -1,10 +1,10 @@
 .filterDiv{
     width: 90%;
     height: 88px;
-    margin: auto;
     margin-top: 72px;
     margin-left: 5%;
-    border: 1px solid rgba(229, 229, 229, 1);
+    border-top: 1px solid rgba(229, 229, 229, 1);
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
     position: relative;
 }
 
@@ -35,7 +35,7 @@
     width: 148px;
     height: 40px;
     position: absolute;
-    left: 70%;
+    left: 80%;
     top: 24px;
 
 }
