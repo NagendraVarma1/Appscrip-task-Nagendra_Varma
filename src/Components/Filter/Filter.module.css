@@ -125,4 +125,11 @@ text-align: left;
         font-weight: 600;
         padding-bottom: 5px;
     }
+
+    .productsDiv, .productsDivFull{
+        width: 97%;
+        height: max-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
