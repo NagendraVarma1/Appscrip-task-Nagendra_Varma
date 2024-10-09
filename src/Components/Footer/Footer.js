@@ -19,9 +19,9 @@ const Footer = () => {
         <div className={classes.contact2}>
           <p className={classes.text1}>CONTACT US</p>
           <p className={classes.text2}>+44 221 133 5360</p>
-          <p className={classes.text2}>customercare@mettamuse.com</p>
-          <p className={classes.text1}>CURRENCY (+USD)</p>
-          <p className={classes.text2}>
+          <p className={classes.text3}>customercare@mettamuse.com</p>
+          <p className={classes.text4}>CURRENCY (+USD)</p>
+          <p className={classes.text5}>
             Transactions will be completed in Euros and a currency reference is
             available on hover.
           </p>

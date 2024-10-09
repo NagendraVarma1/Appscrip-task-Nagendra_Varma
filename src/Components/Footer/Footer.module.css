@@ -1,6 +1,6 @@
 .footer{
     width: 100%;
-    height: 750px;
+    height: max-content;
     background-color: rgba(0, 0, 0, 1);
 
 }
@@ -19,13 +19,13 @@
     width: 48%;
 }
 
-.text1{
+.text1, .text4{
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
 }
 
-.text2{
+.text2, .text3, .text5{
     margin-top: 24px;
 }
 
@@ -56,4 +56,39 @@
 
 .footerList li{
     padding-bottom:10px ;
+}
+
+
+@media screen and (max-width: 500px) {
+    .contactDiv{
+        width: 90%;
+        margin-left: 5%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid white;
+    }
+
+    .contact1, .text2{
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+
+    
+
+    .btn{
+        width: 30%;
+        height: 40px;
+        margin-left: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .quickLinksDiv{
+        color: white;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
 }
