@@ -1,16 +1,21 @@
 import classes from "./Header.module.css";
-import logo from "../../Assests/Logo.jpg";
-import search from "../../Assests/search-normal.jpg";
-import heart from "../../Assests/heart.jpg";
-import bag from "../../Assests/shopping-bag.jpg";
-import profile from "../../Assests/profile.jpg";
-import language from "../../Assests/Language.jpg";
-import hamburger from '../../Assests/solar_hamburger-menu-linear.jpg'
+import logo from "../../Assests/Logo.svg";
+import search from "../../Assests/search-normal.svg";
+import heart from "../../Assests/heart.svg";
+import bag from "../../Assests/shopping-bag.svg";
+import profile from "../../Assests/profile.svg";
+import language from "../../Assests/Language.svg";
+import hamburger from '../../Assests/solar_hamburger-menu-linear.svg'
+import brandAndLogo from '../../Assests/Frame 32.svg'
 
 const Header = () => {
   return (
     <div className={classes.mainHeader}>
-      <div className={classes.headerStrip}></div>
+      <div className={classes.headerStrip}>
+      <img className={classes.brandAndLogo1} src={brandAndLogo} alt="brand and logo"/>
+        <img className={classes.brandAndLogo2} src={brandAndLogo} alt="brand and logo"/>
+        <img className={classes.brandAndLogo3} src={brandAndLogo} alt="brand and logo"/>
+      </div>
       <div className={classes.head}>
         <div className={classes.header}>
         <img className={classes.hamburger} src={hamburger} alt="hamburger" />

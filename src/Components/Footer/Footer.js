@@ -1,5 +1,6 @@
 import classes from "./Footer.module.css";
-import insta from '../../Assests/Insta.jpg';
+import insta from '../../Assests/Insta.svg';
+import linkedIn from '../../Assests/a.svg';
 
 const Footer = () => {
   return (
@@ -46,7 +47,8 @@ const Footer = () => {
         </ul>
         <div className={classes.followUs}>
             <p>FOLLOW US</p>
-            <img src={insta} alt="insta logo"/>
+            <img style={{marginRight: '10px'}} src={insta} alt="insta logo"/>
+            <img src={linkedIn} alt="linkedIn logo"/>
         </div>
       </div>
     </div>
