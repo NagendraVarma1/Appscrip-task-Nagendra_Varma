@@ -50,12 +50,13 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .items{
         display: none;
     }
+    
     .hideFilterDiv{
         cursor: pointer;
         position: static;

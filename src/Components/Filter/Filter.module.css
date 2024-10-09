@@ -75,6 +75,54 @@ text-align: left;
     text-align: center;
 }
 
-@media screen and (max-height: 500px) {
-    
+@media screen and (max-width: 500px) {
+    .totalDiv{
+        width: 90%;
+        margin: 32px 5% 48px 8%;
+        display: flex;
+        position: relative;
+    }
+    .filters{
+        width: 40%;
+        height: 846px;
+        position: absolute;
+        left: -5%;
+        background-color: rgba(19, 18, 18, 0.8);
+    }
+    .select{
+        width: 80%;
+        margin-left: 10%;
+        height: 30px;
+    }
+    .labels{
+        color: white;
+        font-size: 15px;
+        margin-left: 10%;
+    }
+
+    .product{
+        width: 150px;
+        height: 277px;
+        margin: 2px;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px black;
+    }
+
+    .productImg{
+        width: 150px;
+        height: 220px;
+    }
+
+    .title{
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .price{
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
 }
