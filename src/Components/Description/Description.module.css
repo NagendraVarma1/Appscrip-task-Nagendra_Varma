@@ -1,20 +1,20 @@
 .headingDiv{
-    width: 666px;
+    width: 100%;
     height: 72px;
     margin-top: 72px;
-    margin: auto
 }
 
 .heading{
     font-weight: 400;
-    font-size: 50px;
+    font-size: 30px;
+    padding-left: 20px; 
     text-align: center;
     line-height: 72px;
     letter-spacing: 1px;
 }
 
 .descDiv{
-    width: 721px;
+    width: 100%;
     height: 80px;
     margin-top: 16px;
     margin: auto;
@@ -26,4 +26,24 @@ font-weight: 400;
 line-height: 40px;
 text-align: center;
 
+}
+
+@media screen and (max-width: 500px) {
+    .heading{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        text-align: center
+    }
+    .descDiv{
+        width: 80%;
+        height: 66px;
+        margin-top: 10px;
+    }
+    .desc{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+    }
 }

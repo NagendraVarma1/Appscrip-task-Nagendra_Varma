@@ -74,3 +74,7 @@ text-align: left;
 .price{
     text-align: center;
 }
+
+@media screen and (max-height: 500px) {
+    
+}

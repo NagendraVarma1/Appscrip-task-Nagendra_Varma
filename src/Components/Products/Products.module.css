@@ -1,9 +1,9 @@
 .filterDiv{
-    width: 85%;
+    width: 90%;
     height: 88px;
     margin: auto;
     margin-top: 72px;
-    margin-left: 96px;
+    margin-left: 5%;
     border: 1px solid rgba(229, 229, 229, 1);
     position: relative;
 }
@@ -35,8 +35,38 @@
     width: 148px;
     height: 40px;
     position: absolute;
-    left: 75%;
+    left: 70%;
     top: 24px;
 
 }
 
+@media screen and (max-width: 500px) {
+
+    .filterDiv{
+        width: 90%;
+        height: 40px;
+        margin-left: 5%;
+        border: 1px solid rgba(229, 229, 229, 1);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .items{
+        display: none;
+    }
+    .hideFilterDiv{
+        cursor: pointer;
+        position: static;
+        color:rgba(136, 135, 146, 1);
+        border-bottom: none;
+        font-size: 16px;
+    }
+    .recommended{
+        width: 140px;
+        height: 17px;
+        position: static;
+    
+    }
+}
